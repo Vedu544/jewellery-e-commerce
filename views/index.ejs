@@ -1,0 +1,183 @@
+<!-- //header-starts -->
+<%- include('header.ejs') %>
+<!-- //after header section -->
+
+<!-- //login pop-up -->
+<!-- <div class="popupbox" 
+    <form class="formbox" action="/login" method="POST">
+        <div class="head">
+            Login
+            <button class="close" onclick="closePopup()" id="pop-close">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                  </svg>
+            </button>
+        </div>
+        <label for="Name">Name:</label>
+        <input type="Name" id="name" name="name" placeholder="Enter Name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"  required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <button class="submit" type="submit" onclick="savedata()" id="save_btn">Submit</button>
+    </form>
+</div> -->
+
+
+
+<!-- //slider starts -->
+<div class="slider">
+    <img src="images/slider-1-final.png" class="slide">
+    <img src="images/slider-2-final.png" class="slide">
+    <img src="images/slider-3-final.png" class="slide">
+
+    <div class="prevnext">
+     <button class="slider-prev" onclick="goprev()">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+          </svg>
+          
+          
+    </button>
+    <button class="slider-next" onclick="gonext()">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+          </svg>
+     </button>
+    </div>
+</div>
+
+
+<!-- shop by category starts -->
+<div class="category-conatainer">
+    <div class="category-header">
+        <h1>Shop by Category</h1>
+        <h4>Browse Through Your Favorites Categories!</h4>
+        <img src="/images/heading-end.png" alt="failed to load image">
+    </div>
+
+    <div class="shop-category-container">
+        <div class="shop-category-card shop-rings">
+            <img src="/images/rings/ring2a.png" alt="failed to load image">
+            <div class="shop-category-card-name">
+                Rings
+            </div>
+        </div>
+        <div class="shop-category-card shop-Necklaces">
+            <img src="/images/necklaces/necklace1a.png" alt="failed to load image">
+            <div class="shop-category-card-name">
+                Necklaces
+            </div>
+        </div>
+
+        <div class="shop-category-card shop-Chains">
+            <img src="/images/homeCategory/chains.png" alt="failed to load image">
+            <div class="shop-category-card-name">
+                Chains
+            </div>
+        </div>
+
+        <div class="shop-category-card shop-Earrings">
+            <img src="/images/homeCategory/earrings.png" alt="failed to load image">
+            <div class="shop-category-card-name">
+                Earrings
+            </div>
+        </div>
+
+        <div class="shop-category-card shop-Pendants">
+            <img src="/images/homeCategory/pendants.png" alt="failed to load image">
+            <div class="shop-category-card-name">
+                Pendants
+            </div>
+        </div>
+
+        <div class="shop-category-card shop-bracelets">
+            <img src="/images/bracelets/bracelet1a.png" alt="failed to load image">
+            <div class="shop-category-card-name">
+                Bracelets
+            </div>
+        </div>
+
+        <div class="shop-category-card shop-nosepins">
+            <img src="/images/homeCategory/nosePins.png" alt="failed to load image">
+            <div class="shop-category-card-name">
+                Nose Pins
+            </div>
+        </div>
+
+        <div class="shop-category-card shop-bangles">
+            <img src="/images/bangles/bangle1a.png" alt="failed to load image">
+            <div class="shop-category-card-name">
+                Bangles
+            </div>
+        </div>
+
+        <div class="shop-category-card shop-goldcoins">
+            <img src="/images/homeCategory/goldCoins.png" alt="failed to load image">
+            <div class="shop-category-card-name">
+                Gold Coins
+            </div>
+        </div>
+
+        <div class="shop-category-card shop-mangalsutra">
+            <img src="/images/homeCategory/mangalsutras.png" alt="failed to load image">
+            <div class="shop-category-card-name">
+                Mangalsutra
+            </div>
+        </div>
+</div>
+
+<!-- 
+shop by gender strats here -->
+<div class="gender-category-conatainer">
+    <div class="gender-header">
+        <h1>Shop by Gender</h1>
+        <h3>First-class jewelry for first-class Men, Women & Children!</h3>
+        <img src="/images/heading-end.png" alt="failed to load image">
+    </div>
+    <div class="shop-gender-container">
+        <div class="shop-gender shop-mens">
+            <img src="/images/men-gender-jewellery.png" alt="failed to load">
+            <div class="shop-gender-name">
+                <div><h1>Men</h1></div>
+                <h3 class="Explore">
+                    Explore
+                </h3> <i class="fa-solid fa-chevron-right"></i>
+              </div>
+        </div>
+
+        <div class="shop-gender shop-womens">
+            <img src="/images/women-gender-jewellery.png" alt="failed to load">
+            <div class="shop-gender-name">
+                <div><h1>Women</h1></div>
+                <h3 class="Explore">
+                    Explore
+                </h3>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+        </div>
+
+        <div class="shop-gender shop-unisex">
+            <img src="/images/unisex-gender-jewellery.png" alt="failed to load">
+            <div class="shop-gender-name">
+                <div><h1>Unisex</h1></div>
+                <h3 class="Explore">
+                    Explore
+                </h3>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- //footer starts -->
+<%- include('footer.ejs') %>
+
+
+<script type="text/javascript" defer src="/js/index.js"></script>
+
+

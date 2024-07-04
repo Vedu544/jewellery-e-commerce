@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jdetails.css">
+    <script type="text/javascript" defer src="/js/jdetails.js"></script>
+    <script type="text/javascript" defer src="/js/index.js"></script>
+</head>
+
+<body>
+<%- include('header.ejs') %>
+
+    <section class="main-wrap">
+        <div class="product">
+            <div class="image-gallery">
+                <img src="<%- jewellery.picture1 %>" id="image1" alt="">
+            </div>
+            <div class="product-details">
+                <div class="details">
+                    <div class="id">
+                        <%= jewellery._id %>
+                    </div>
+                    <h2>
+                        <%= jewellery.name %>
+                    </h2>
+                    <h3>
+                       <label>
+                        Price:
+                       </label> <%= jewellery.price %>
+                    </h3>
+                    <br>
+                    <h4>
+                        <%= jewellery.description %>
+                    </h4>
+                    </p>
+                    <div class="category">
+                        <label>Category:</label>
+                        <%= jewellery.category %>
+                    </div>
+                    <div class="gold-purity">
+                        <div class="gold">
+                            <label>gold-purity:</label>
+                            <p>
+                                <%= jewellery.gold_purity%> Karat
+                            </p>
+                        </div>
+
+                        <% if(jewellery.diamond_weight){%>
+                            <div class="diamond">
+                                <label>Diamond Weight: </label>
+                                <p>
+                                    <%= jewellery.diamond_weight%> c
+                                </p>
+                            </div>
+                            <% } %>
+                    </div>
+
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <div class="dec">
+                            <button class="decrement">-</button>
+                        </div>
+                        <% if(jewellery.qty>=0){%>
+                            <div class="number qty-in-text">
+                                <%=jewellery.qty %>
+                            </div>
+                            <%}%>
+                                <div class="inc">
+                                    <button class="increment">+</button>
+                                </div>
+                    </div>
+
+                    <div class="size">
+                        <div class="gross-weight">
+                            <label>Gross Weight: </label>
+                            <p>
+                                <%= jewellery.gross_weight%> g
+                            </p>
+                        </div>
+                        <% if(jewellery.size){%>
+                            <div class="j-size">
+                                <label>Size: </label>
+                                <%if(jewellery.category=="bracelets" ){%>
+                                    <p>
+                                        <%= jewellery.size%> CMS
+                                    </p>
+                                    <%}%>
+                                        <%if(jewellery.category=="rings" || jewellery.category=="bangles" ){%>
+                                            <p>
+                                                <%= jewellery.size%> MM
+                                            </p>
+                                            <%}%>
+                                                <%if(jewellery.category=="mangalsutras" || jewellery.category=="chains"
+                                                    ){%>
+                                                    <p>
+                                                        <%= jewellery.size%> INCHES
+                                                    </p>
+                                                    <%}%>
+                            </div>
+                            <% } %>
+                    </div>
+                    <div class="gender">
+                        <label>Gender: </label>
+                        <p>
+                            <%= jewellery.gender%>
+                        </p>
+                    </div>
+
+
+                    <div class="buttons">
+                        <button class="favorites">
+                            <p>Add to favorites</p>
+                        </button>
+                        <button class="addtocart">
+                            <p>Add to cart</p>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+<%- include('footer.ejs') %>
+</body>
+
+</html>

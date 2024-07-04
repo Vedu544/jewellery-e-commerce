@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="css/jlist.css">
+<%- include('header.ejs') %>
+  <div class="checkbox">
+    <div class="select-btn">
+      <span class="btn-text">Price</span>
+
+      <ul class="list-items">
+        <li class="item">
+          <span class="Default">Default</span>
+        </li>
+        <li class="item">
+          <span class="high-to-low">high to low</span>
+        </li>
+        <li class="item">
+          <span class="low-to-high">low to high</span>
+        </li>
+      </ul>
+    </div>
+    <div class="checkbox-container">
+      <div class="checkbox-item">
+        <input type="checkbox" id="category-checkbox">
+        <label for="category-checkbox" class="checkbox-header">Shop by Category</label>
+        <ul class="checkbox-list">
+            <li class="rings" >Rings</li>
+            <li class="necklaces">Necklaces</li>
+            <li class="earrings">Earrings</li>
+            <li class="pendants">Pendants</li>
+            <li class="bracelets">Bracelets</li>
+            <li class="nosepins">Nosepins</li>
+            <li class="bangles">Bangles</li>
+            <li class="gold-coins">Gold Coins</li>
+            <li class="Mangalsutra">Mangalsutra</li>
+          <button class="reset&results">
+            <button class="reset">Reset all</button>
+            <button class="Results">Show Results</button>
+          </button>
+        </ul>
+      </div>
+
+      <div class="checkbox-item">
+        <input type="checkbox" id="type-checkbox">
+        <label for="type-checkbox" class="checkbox-header">Shop by Types</label>
+        <ul class="checkbox-list">
+          <li class="gold" class="">Gold</li>
+          <li class="diamond">Diamond</li>
+          <li class="sliver">Silver</li>
+        </ul>
+      </div>
+
+      <div class="checkbox-item">
+        <input type="checkbox" id="gender-checkbox">
+        <label for="gender-checkbox" class="checkbox-header">Shop by Gender</label>
+        <ul class="checkbox-list">
+          <li class="maleG">Male</li>
+          <li class="female">Female</li>
+          <li class="unisex">Unisex</li>
+        </ul>
+      </div> -
+    </div>
+  </div>
+
+  <div class="cards-section">
+    <div class="cards-div" id="carList">
+    </div>
+  </div>
+
+  <script src="/js/jlist.js"></script>
+  <script type="text/javascript" defer src="/js/index.js"></script>

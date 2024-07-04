@@ -1,0 +1,85 @@
+*{
+    font-family: 'Lexend',sans-serif;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.title{
+    font-size:25px;
+    color: crimson;
+    text-decoration: double;
+    padding-left: 10px;
+}
+.searchbar {
+    margin-left: 170px;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+   
+    
+}
+
+.search-input {
+    background-color: antiquewhite;
+    color: black;
+    width: 600px;
+    left: 0;
+    margin-left: 0px;
+    padding-left: 7px;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+}
+.search-input::placeholder {
+    color:black;
+    font-style: italic;
+}
+
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+.actions .favorites,
+.actions .login-button,
+.actions .your-cart,
+.actions .profile
+{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: larger;
+    gap: 2px;
+    background: none;
+    color: black;
+}
+.actions button {
+    transition: background-color 0.3s, color 0.3s; 
+    cursor: pointer; 
+}
+
+.actions button:hover {
+    background-color: violet; 
+    transform: scale(1.05);
+}
+
+.actions button svg{
+    width: 1.4rem;
+    height: 1.4rem;
+    vertical-align: middle;
+}

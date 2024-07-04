@@ -1,0 +1,40 @@
+*{
+    border: 'Lexend',sans-serif;
+}
+.formbox {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.formbox label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formbox input[type="email"],
+.formbox input[type="password"],
+.formbox button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.formbox button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
