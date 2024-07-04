@@ -15,6 +15,9 @@ const bodyParser = require('body-parser');
 const expresslayouts = require ('express-ejs-layouts')
 //templating engine
 
+console.log("hello")
+
+
 app.use(expresslayouts);
 app.set('layout','./layouts/home')
 app.set('view engine','ejs')
